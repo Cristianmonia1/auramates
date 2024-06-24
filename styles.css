@@ -368,7 +368,7 @@ body {
 
 
 /* Estilos generales para pantallas pequeñas */
-@media (max-width: 800px) {
+@media (max-width: 390px) {
     body {
         display: flex;
         flex-direction: column;
