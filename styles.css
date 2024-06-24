@@ -369,8 +369,6 @@ body {
 
 /* Estilos generales para pantallas pequeñas */
 @media (max-width: 800px) {
-    /* Ajustes generales para dispositivos móviles */
-
     body {
         display: flex;
         flex-direction: column;
@@ -383,26 +381,26 @@ body {
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 5px 0; /* Reducir el margen vertical */
         text-align: center; /* Centrar el texto del menú */
     }
 
     .cart-dropdown {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px; /* Reducir el ancho máximo del carrito */
         margin: 10px; /* Añadir un margen para separar del borde del viewport */
     }
 
     .cart-item {
         background-color: #ffffff; /* Fondo blanco para el elemento del carrito */
         padding: 10px; /* Espaciado interno */
-        margin-bottom: 10px; /* Espacio entre elementos del carrito */
+        margin-bottom: 5px; /* Reducir el espacio entre elementos del carrito */
         display: flex;
         align-items: center;
     }
 
     .cart-item img {
-        max-width: 80px; /* Ajustar el tamaño máximo de la imagen */
+        max-width: 70px; /* Reducir el tamaño máximo de la imagen */
         margin-right: 10px; /* Espacio a la derecha de la imagen */
     }
 
@@ -412,11 +410,12 @@ body {
 
     .cart-item-price {
         font-weight: bold; /* Precio en negrita */
-        margin-bottom: 5px; /* Espacio inferior */
+        margin-bottom: 3px; /* Reducir el espacio inferior */
+        font-size: 14px; /* Reducir el tamaño de fuente del precio */
     }
 
     .cart-item-buttons {
-        margin-top: 5px; /* Espacio superior */
+        margin-top: 3px; /* Reducir el espacio superior */
     }
 
     .submenu {
@@ -429,19 +428,6 @@ body {
     .productos-menu.active .submenu {
         display: block;
     }
-      
-    }
+}
 
-   
-
-    .submenu {
-        position: static;
-        display: none;
-        width: auto;
-        box-shadow: none;
-    }
-
-    .productos-menu.active .submenu {
-        display: block;
-    }
 
