@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         cartItems.forEach(item => {
             message += `${item.name} - ${item.price}\n`;
         });
-        const whatsappUrl = `https://api.whatsapp.com/send?phone=1127335869&text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://api.whatsapp.com/send?phone=+541127335869&text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     });
 
