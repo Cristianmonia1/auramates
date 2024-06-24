@@ -368,7 +368,7 @@ body {
 
 
 /* Estilos generales para pantallas pequeñas */
-@media (max-width: 578px) {
+@media (max-width: 414px) {
     /* Ajustes generales para dispositivos móviles */
 
     body {
