@@ -367,18 +367,56 @@ body {
 }
 
 
+/* Estilos generales para pantallas pequeñas */
 @media (max-width: 768px) {
+    /* Ajustes generales para dispositivos móviles */
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente */
+    }
+
     nav ul {
         flex-direction: column;
+        align-items: center; /* Centrar horizontalmente los elementos del menú */
     }
 
     nav ul li {
         margin: 10px 0;
+        text-align: center; /* Centrar el texto del menú */
     }
 
     .cart-dropdown {
         width: 100%;
         max-width: 300px;
+        margin: 10px; /* Añadir un margen para separar del borde del viewport */
+    }
+
+    .cart-item {
+        background-color: #ffffff; /* Fondo blanco para el elemento del carrito */
+        padding: 10px; /* Espaciado interno */
+        margin-bottom: 10px; /* Espacio entre elementos del carrito */
+        display: flex;
+        align-items: center;
+    }
+
+    .cart-item img {
+        max-width: 80px; /* Ajustar el tamaño máximo de la imagen */
+        margin-right: 10px; /* Espacio a la derecha de la imagen */
+    }
+
+    .cart-item-info {
+        flex: 1; /* Que ocupe todo el espacio disponible */
+    }
+
+    .cart-item-price {
+        font-weight: bold; /* Precio en negrita */
+        margin-bottom: 5px; /* Espacio inferior */
+    }
+
+    .cart-item-buttons {
+        margin-top: 5px; /* Espacio superior */
     }
 
     .submenu {
@@ -391,4 +429,44 @@ body {
     .productos-menu.active .submenu {
         display: block;
     }
+
+    /* Ajustes específicos para iPhones */
+    @media only screen and (max-width: 414px) { /* iPhone 13 Pro Max, por ejemplo */
+        .cart-dropdown {
+            max-width: 280px; /* Reducir el ancho del carrito */
+        }
+
+        /* Otros ajustes específicos para iPhones */
+    }
+
+    @media only screen and (max-width: 375px) { /* iPhone 12, 12 Pro, 11, XS, X, etc. */
+        .cart-dropdown {
+            max-width: 260px; /* Reducir el ancho del carrito */
+        }
+
+        /* Otros ajustes específicos para iPhones */
+    }
+
+    @media only screen and (max-width: 320px) { /* iPhone SE (1ra y 2da generación), 5S, etc. */
+        .cart-dropdown {
+            max-width: 240px; /* Reducir el ancho del carrito */
+        }
+
+        /* Otros ajustes específicos para iPhones */
+    }
+
+    /* Ajustes adicionales según sea necesario para otros tamaños de iPhone */
+
 }
+
+    .submenu {
+        position: static;
+        display: none;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .productos-menu.active .submenu {
+        display: block;
+    }
+
