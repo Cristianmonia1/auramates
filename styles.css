@@ -368,7 +368,7 @@ body {
 
 
 /* Estilos generales para pantallas pequeñas */
-@media (max-width: 414px) {
+@media (max-width: 800px) {
     /* Ajustes generales para dispositivos móviles */
 
     body {
@@ -429,35 +429,10 @@ body {
     .productos-menu.active .submenu {
         display: block;
     }
-
-    /* Ajustes específicos para iPhones */
-    @media only screen and (max-width: 414px) { /* iPhone 13 Pro Max, por ejemplo */
-        .cart-dropdown {
-            max-width: 280px; /* Reducir el ancho del carrito */
-        }
-
-        /* Otros ajustes específicos para iPhones */
+      
     }
 
-    @media only screen and (max-width: 375px) { /* iPhone 12, 12 Pro, 11, XS, X, etc. */
-        .cart-dropdown {
-            max-width: 260px; /* Reducir el ancho del carrito */
-        }
-
-        /* Otros ajustes específicos para iPhones */
-    }
-
-    @media only screen and (max-width: 320px) { /* iPhone SE (1ra y 2da generación), 5S, etc. */
-        .cart-dropdown {
-            max-width: 240px; /* Reducir el ancho del carrito */
-        }
-
-        /* Otros ajustes específicos para iPhones */
-    }
-
-    /* Ajustes adicionales según sea necesario para otros tamaños de iPhone */
-
-}
+   
 
     .submenu {
         position: static;
