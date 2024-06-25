@@ -373,6 +373,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center; /* Centrar horizontalmente */
+        max-height: 844px; /* Establecer altura máxima */
+        margin: 0; /* Eliminar márgenes para ajuste completo */
     }
 
     nav ul {
@@ -429,5 +431,6 @@ body {
         display: block;
     }
 }
+
 
 
