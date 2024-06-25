@@ -372,52 +372,50 @@ body {
     body {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrar horizontalmente */
-        max-height: 844px; /* Establecer altura máxima */
-        margin: 0; /* Eliminar márgenes para ajuste completo */
+        align-items: center;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center; /* Centrar horizontalmente los elementos del menú */
+        align-items: center;
     }
 
     nav ul li {
-        margin: 5px 0; /* Reducir el margen vertical */
-        text-align: center; /* Centrar el texto del menú */
+        margin: 5px 0;
+        text-align: center;
     }
 
     .cart-dropdown {
         width: 100%;
-        max-width: 280px; /* Reducir el ancho máximo del carrito */
-        margin: 10px; /* Añadir un margen para separar del borde del viewport */
+        max-width: 280px;
+        margin: 10px;
     }
 
     .cart-item {
-        background-color: #ffffff; /* Fondo blanco para el elemento del carrito */
-        padding: 10px; /* Espaciado interno */
-        margin-bottom: 5px; /* Reducir el espacio entre elementos del carrito */
+        background-color: #ffffff;
+        padding: 10px;
+        margin-bottom: 5px;
         display: flex;
         align-items: center;
     }
 
     .cart-item img {
-        max-width: 70px; /* Reducir el tamaño máximo de la imagen */
-        margin-right: 10px; /* Espacio a la derecha de la imagen */
+        max-width: 70px;
+        margin-right: 10px;
     }
 
     .cart-item-info {
-        flex: 1; /* Que ocupe todo el espacio disponible */
+        flex: 1;
     }
 
     .cart-item-price {
-        font-weight: bold; /* Precio en negrita */
-        margin-bottom: 3px; /* Reducir el espacio inferior */
-        font-size: 14px; /* Reducir el tamaño de fuente del precio */
+        font-weight: bold;
+        margin-bottom: 3px;
+        font-size: 14px;
     }
 
     .cart-item-buttons {
-        margin-top: 3px; /* Reducir el espacio superior */
+        margin-top: 3px;
     }
 
     .submenu {
@@ -429,6 +427,38 @@ body {
 
     .productos-menu.active .submenu {
         display: block;
+    }
+
+    /* Ajustes específicos para contenido */
+    .contenido-principal {
+        max-width: 100%; /* Asegura que el contenido principal ocupe todo el ancho disponible */
+        padding: 10px; /* Ajusta el espaciado interno según sea necesario */
+        text-align: center; /* Centra el texto principal */
+    }
+
+    .h1 {
+        font-size: 24px; /* Ajusta el tamaño de la fuente del título principal */
+        margin-bottom: 10px; /* Espacio inferior del título */
+    }
+
+    .descripcion-1 {
+        font-size: 16px; /* Ajusta el tamaño de la fuente de la descripción */
+        margin-bottom: 10px; /* Espacio inferior de la descripción */
+    }
+
+    .text1 {
+        font-size: 14px; /* Ajusta el tamaño de la fuente del texto 1 */
+        margin-bottom: 10px; /* Espacio inferior del texto 1 */
+    }
+
+    .combos {
+        font-size: 14px; /* Ajusta el tamaño de la fuente de los combos */
+        margin-bottom: 10px; /* Espacio inferior de los combos */
+    }
+
+    .bombillas {
+        font-size: 14px; /* Ajusta el tamaño de la fuente de las bombillas */
+        margin-bottom: 10px; /* Espacio inferior de las bombillas */
     }
 }
 
