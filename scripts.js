@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const buyButtons = document.querySelectorAll('.buy-btn');
+    const buyButtons = document.querySelectorAll('.buy-promo-btn');
     const cartDropdown = document.querySelector('.cart-dropdown');
     const cartIcon = document.querySelector('.cart-icon');
 
@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Agregar productos al carrito al hacer clic en los botones de compra
     buyButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const product = button.closest('.product');
+            const product = button.closest('#promocion');
             const productInfo = {
                 image: product.querySelector('img').src,
-                name: product.querySelector('h3').textContent,
-                price: product.querySelector('p:last-of-type').textContent
+                name: product.querySelector('h2').textContent,
+                price: 'Precio de promoción' // Puedes cambiar esto al precio real
             };
             cartItems.push(productInfo);
             renderCart();
@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 document.addEventListener("DOMContentLoaded", function() {
     var preloader = document.getElementById("preloader");
     var content = document.getElementById("content");

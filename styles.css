@@ -358,6 +358,50 @@ body {
     animation: heartbeat 1s infinite;
 }
 
+#promocion {
+    background: #f4f4f4;
+    padding: 3px;
+    text-align: center;
+}
+
+.promo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo-content img {
+    width: 30vw; /* 30% del ancho de la ventana */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.promo-content button {
+    background-color: #b3e5fc; /* Color azul claro */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.promo-content button:hover {
+    background-color: #81d4fa; /* Azul más claro al pasar el cursor */
+}
+
+
+
+
+
+
+    
 @keyframes heartbeat {
     0% { transform: scale(1); }
     25% { transform: scale(1.1); }
@@ -411,4 +455,17 @@ body {
         padding: 6px 12px; /* Ajustar tamaño de botón */
         font-size: 12px; /* Reducir tamaño de fuente */
     }
+    .promotion-title {
+        font-size: 28px;
+    }
+
+    .promotion-description {
+        font-size: 16px;
+    }
+
+    .promotion-button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
 }
